@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "bin-int\\Debug-windows-x86_64\\imgui\\std.ixx.obj",
+            "outputs": [
+                "C:\\dev\\MEA\\MEA\\vendor\\imgui\\bin\\Debug-windows-x86_64\\imgui\\imgui.pdb",
+                "bin-int\\Debug-windows-x86_64\\imgui\\",
+                "C:\\dev\\MEA\\MEA\\vendor\\imgui\\bin-int\\Debug-windows-x86_64\\imgui\\std.ixx.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "std",
+                    "source-path": "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.36.32532\\modules\\std.ixx",
+                    "is-interface": true
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

@@ -1,0 +1,581 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C33010",
+          "message": {
+            "text": "Unchecked lower bound for enum key used as index.."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                },
+                "region": {
+                  "startLine": 5795,
+                  "startColumn": 102,
+                  "endLine": 5795,
+                  "endColumn": 126
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ShowDemoWindowInputs::funcs::IsLegacyNativeDupe",
+                  "decoratedName": "?IsLegacyNativeDupe@funcs@?BA@??ShowDemoWindowInputs@@YAXXZ@SA_NW4ImGuiKey@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 5795,
+                            "startColumn": 40
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 5795,
+                            "startColumn": 86
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition 'key < 512'. 'true' branch is taken\nEnum value 'key' is checked for upper bound."
+                        }
+                      },
+                      "kinds": [
+                        "Combination"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 5795,
+                            "startColumn": 102
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 5795,
+                            "startColumn": 122
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'p_open'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                },
+                "region": {
+                  "startLine": 7986,
+                  "startColumn": 18,
+                  "endLine": 7986,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ShowExampleAppDockSpace",
+                  "decoratedName": "?ShowExampleAppDockSpace@@YAXPEA_N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7914,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7915,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7916,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7920,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7921,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7934,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7939,
+                            "startColumn": 25
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7947,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7949,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7950,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7953,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7957,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7958,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7965,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7968,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7970,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7974,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7975,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7976,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7978,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7979,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7980,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7981,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7982,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7983,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7985,
+                            "startColumn": 32
+                          }
+                        },
+                        "message": {
+                          "text": "'p_open' may be NULL (Enter this branch)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+                          },
+                          "region": {
+                            "startLine": 7986,
+                            "startColumn": 25
+                          }
+                        },
+                        "message": {
+                          "text": "'p_open' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31937.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/dev/MEA/MEA/vendor/imgui/imgui_demo.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "76126d55c69534a02ab14d6d040ace2f453501ad8b248827e02cad87c2f51b0f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/dev/mea/mea/vendor/imgui/imgui.h"
+          },
+          "hashes": {
+            "sha-256": "33921af522e9865b352537739e43f2ff77ce140cdf6f9e97b74b2065aa0df403"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/dev/mea/mea/vendor/imgui/imconfig.h"
+          },
+          "hashes": {
+            "sha-256": "ee19126d062647ced5ad53a065bfa3cab04b1f14b65a6f72da3c9139f2b425ab"
+          }
+        }
+      ]
+    }
+  ]
+}
